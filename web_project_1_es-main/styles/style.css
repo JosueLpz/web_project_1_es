@@ -91,7 +91,7 @@
 .two-columns{
   margin-top: 100px;
   margin-bottom: 100px;
-/*entiendo que puedo agregar un margin y asignar valores suguiendo la aguja de el relod. en una sola linea de codigo pero cuando se trata de top y bootom como los asigno? */  
+/*entiendo que puedo agregar un margin y asignar valores suguiendo la aguja de el relod. en una sola linea de codigo pero cuando se trata de top y bootom como los asigno? */
   display: flex;
   flex-direction: row;
   justify-content: space-around;
