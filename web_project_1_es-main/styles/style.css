@@ -17,11 +17,12 @@
   min-height: 600px;
   max-height: 756px;
   display: flex;
-  align-items: center;
+  align-items: center; /* esta propiedad la uso para centrar el elemento en el centro de el bloque header sin ella se corre hacia arriba. de otra forma que otra propiedad usaria? */
   background-color: #F2F2F2;
-  margin-bottom: 100px;
   position: relative;
+  overflow: hidden;
 }
+
 .logo {
   z-index: 1;
   width: 154px;
@@ -41,6 +42,7 @@
   margin-left: 64px;
   width: 730px;
   z-index: 1;
+  margin: 0;
   }
 
 .header__subtitle{
@@ -52,14 +54,13 @@
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  margin: 0;
 }
 
-.link{
+.header__link{
   color: #2F80ED;
   text-decoration: none;
-  position: absolute;
-  left: 64px;
-  bottom: 30px;
+  display: flex; /*porque recibe la propiedad display*/
 }
 
 .header__main-illustration{
@@ -85,17 +86,18 @@
 
 /* Main */
 .description{
-  margin-bottom: 100px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 } 
 
 .two-columns{
-  margin-top: 100px;
-  margin-bottom: 100px;
-/*entiendo que puedo agregar un margin y asignar valores suguiendo la aguja de el relod. en una sola linea de codigo pero cuando se trata de top y bootom como los asigno? */
+  min-width: 784px;
+  width: 80%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: baseline;
+  justify-content: space-between;
+  margin: 0;
 }
 
 .two-columns__brief{
@@ -104,18 +106,22 @@
   font-size: 18px;
   font-weight: normal;
   color: #2F80ED;
+  margin: 0;
   }
 
 .two-columns__main-text{
-  width: 80%;
   min-width: 784px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
 }
 
 .two-columns__paragraph{
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  margin-bottom: 30px;
+  margin: 0;
 }
 
 .two-columns__span-accent{
@@ -126,56 +132,50 @@
 }
 
 /* Section ONE */
-.digits{
-  margin-bottom: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
-.section{
-  width: 100%;
+.digits{
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 .section__title{
   width: 60%;
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 .section__subtitle{
   width: 60%;
-  margin-bottom: 60px;
+  margin: 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 .table{
   width: 1100px;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  row-gap: 60px;
+  margin: 60px 0 0 0;
+  padding: 0;
+  justify-content: space-around;
 }
 
 .table__cell{
-  width: 230px;  /*Si coloco el width 250px  los cuadros no se colocan el fila de 4 lineas :c */
-  margin-bottom: 60px;
+  width: 250px;
+  list-style: none;
+  padding: 0;
 }
 
 .table__heading{
-margin-bottom: 20px;
+margin: 0px;
 line-height: 1.15;
 font-size: 24px;
 font-weight: bold;
@@ -183,19 +183,17 @@ list-style: none;
 }
 
 .table__text{
+  margin-top: 20px;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
   list-style: none;
 }
 
-.text-span{
-  margin-top: 20px;
-}
-
 /* Section TWO */
 
 .feynman{
+  padding-top: 100px;
   height: 790px;
   display: flex;
   flex-direction: column;
@@ -206,23 +204,20 @@ list-style: none;
 }
 
 .feynman__title{
-  /*Queria usar display flex para centrar el texto en su contenedor <h2> pero no funcionaron los comandos de abajo */
-  display: flex;
-  justify-content: center;
-  /*improvisacion*/
-  padding-left: 250px;
-  /* Use un padding left para correr el elemento y centrarlo de manera manual*/
+  text-align: center;
   width: 775px;
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
-  margin-bottom: 70px;
+  margin: 0 0 70px 0;
 }
 
 .feynman__subtitle{
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
+  margin: 0;
+  text-align: center;
 }
 
 .feynman__link{
@@ -253,140 +248,124 @@ list-style: none;
   align-items: center;
   position: relative;
   background-color: #1F1F1F;
-  background-size: cover;
-  z-index: -2;
   overflow: hidden;
+  padding-top: 90px;
   padding-bottom: 90px;
 }
 
-.section-title{
-  margin-top: 90px;
-  width: 60%;
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: bold;
-  color: white;
-  /* intente de varias maneras pero no logro centrar el texto dentro de el bloque h2 */
-  display: flex;
-  justify-content: center;
+.title_theme-dark{
+  color: #F2F2F2;
 }
 
-.section-subtitle{
-  margin-top: 20px;
-  width: 60%;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-  color: white;
-  display: flex;
-  justify-content: center;
+.subtitle_theme-dark{
+  color: #F2F2F2;
 }
 
-.theme_dark_cell{
-  width: 175px;
+.table_theme-dark{
+  row-gap: 80px;
+  margin-top: 80px;
+  z-index: 2;
 }
 
-.theme_dark_heading{
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: bold;
+.cell_teme-dark{
+  width: 200px;
+}
+
+.heading_theme-dark{
   color: white;
 }
 
-.theme_dark_text{
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
+.text_theme-dark{
   color: white;
 }
 
 .kaufman__triangle{
-  z-index: -1;
+  z-index: 0;
   width: 660px;
   height: 636px;
   position: absolute;
-  right: -100px;
+  top: 0;
+  right: -124px;
 }
 
-/* Siento que use mas codigo de el que deberia haber usado agregando mas modificadores en esta seccion. existia alguna forma de simplificar aun mas
-esta parte con los modificadores? salu2s/*
-
 /* Footer */
+
 .footer{
+  background-color:  #1F1F1F;
   min-height: 350px;
-  background-color: #1F1F1F;
-  background-size: cover;
+  box-sizing: border-box;
   display: flex;
+  padding: 60px auto 40px;
   justify-content: center;
 }
 
 .footer__columns{
+  display: flex;  
   width: 90%;
-  min-height: 350px;
-  margin-top: 60px;
-  margin-bottom: 40px;
-  display: flex;
 }
 
-.footer__colum_content-copyright{
+.footer__column{
   display: flex;
-  flex-direction: column;
   flex-basis: 711px;
-  justify-content: space-between;
-  position: relative;
 }
 
-.logo place-footer{
+.column_content-copyright{
+flex-direction: column;
+display: flex;
+row-gap: 90px;
+}
+
+.column_content-about{
+  flex-direction: column;
+  display: flex;
+  margin: 0;
+}
+
+.column_content-social{
+  flex-direction: column;
+  margin: 0;
+}
+
+.logo logo_place-footer{
   width: 183px;
-  height: 35px; 
+  height: 35px;
 }
 
 .footer__author{
+  color: #F2F2F2;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  margin-bottom: 170px; /* use en el bloque padre justify-content-space-bew. y separo los elementos pero no logro centrar este con flex asi que uso un margin hasta ajustar la alutura :)*/
-  color: white;
+  margin-bottom: 18px;
+  margin-top: 18px;
 }
 
-/* Este modificador fue es inprovisado para poder medificar mejor los elementos de footer con diferentes flex! */
-.footer_colum_content-footer-b{ 
+
+.footer__list{
   display: flex;
-  flex-direction: row;
-  flex-basis: 711px;
-  justify-content: space-around;
+  flex-direction: column;
+  line-height: 30px;
+  font-weight: normal;
+  font-size: 18px;
+  list-style: none;
 }
 
 .footer__column-heading{
+  color:#F2F2F2;
   margin-bottom: 20px;
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
-  color: white;
+  margin: 0 0 20px 0;
 }
 
-.footer__list{
-  line-height: 30px;
-  font-size: 18px;
-  font-weight: normal;
-  margin: 0;
-  list-style: none;
-  color: white;
-}
-
-.footer__colum_social{
-  display: flex;
-  flex-direction: column;
-}
-
-.footer__colum-link{
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
+.footer__column-link{
+  color:#F2F2F2;
+  text-decoration: none;
 }
 
 .footer__social-icons{
-  width: 16px;
   height: 16px;
+  width: 16px;
   margin-right: 10px;
 }
