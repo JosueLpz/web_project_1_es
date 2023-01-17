@@ -1,6 +1,5 @@
 /* Hola Mundo =) */
 
-
 /* Body */
 
 .page {
@@ -17,7 +16,6 @@
   min-height: 600px;
   max-height: 756px;
   display: flex;
-  align-items: center; /* esta propiedad la uso para centrar el elemento en el centro de el bloque header sin ella se corre hacia arriba. de otra forma que otra propiedad usaria? */
   background-color: #F2F2F2;
   position: relative;
   overflow: hidden;
@@ -42,7 +40,8 @@
   margin-left: 64px;
   width: 730px;
   z-index: 1;
-  margin: 0;
+  margin: 0 0 0 64px;
+  align-self: center;
   }
 
 .header__subtitle{
@@ -60,7 +59,7 @@
 .header__link{
   color: #2F80ED;
   text-decoration: none;
-  display: flex; /*porque recibe la propiedad display*/
+  display: block;
 }
 
 .header__main-illustration{
@@ -135,6 +134,7 @@
 
 .digits{
   margin-top: 100px;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -151,7 +151,7 @@
 
 .section__subtitle{
   width: 60%;
-  margin: 0;
+  margin: 0 0 60px 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
@@ -163,7 +163,7 @@
   display: flex;
   flex-wrap: wrap;
   row-gap: 60px;
-  margin: 60px 0 0 0;
+  margin: 0;
   padding: 0;
   justify-content: space-around;
 }
@@ -267,15 +267,15 @@ list-style: none;
   z-index: 2;
 }
 
-.cell_teme-dark{
+.table__cell_teme-dark{
   width: 200px;
 }
 
-.heading_theme-dark{
+.table__heading_theme-dark{
   color: white;
 }
 
-.text_theme-dark{
+.table__text_theme-dark{
   color: white;
 }
 
@@ -295,38 +295,35 @@ list-style: none;
   min-height: 350px;
   box-sizing: border-box;
   display: flex;
-  padding: 60px auto 40px;
+  padding: 60px 0 40px;
   justify-content: center;
 }
 
 .footer__columns{
   display: flex;
+  justify-content: space-between;
   width: 90%;
 }
 
 .footer__column{
   display: flex;
-  flex-basis: 711px;
+  flex-direction: column;
 }
 
 .column_content-copyright{
-flex-direction: column;
-display: flex;
-row-gap: 90px;
+  flex-basis: 711px;
+  justify-content: space-between;
 }
 
 .column_content-about{
-  flex-direction: column;
-  display: flex;
-  margin: 0;
+  row-gap: 20px;
 }
 
 .column_content-social{
-  flex-direction: column;
-  margin: 0;
+  row-gap: 20px;
 }
 
-.logo logo_place-footer{
+.footer__logo-place{
   width: 183px;
   height: 35px;
 }
@@ -342,11 +339,8 @@ row-gap: 90px;
 
 
 .footer__list{
-  display: flex;
-  flex-direction: column;
-  line-height: 30px;
-  font-weight: normal;
-  font-size: 18px;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -356,10 +350,14 @@ row-gap: 90px;
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
-  margin: 0 0 20px 0;
+  margin: 0;
 }
 
 .footer__column-link{
+  line-height: 30px;
+  font-weight: normal;
+  font-size: 18px;
+  list-style: none;
   color:#F2F2F2;
   text-decoration: none;
 }
