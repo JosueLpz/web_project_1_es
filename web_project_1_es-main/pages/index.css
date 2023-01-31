@@ -1,0 +1,61 @@
+/* Vendor */
+@import url(../vendor/normalize.css);
+/* Bloks Body */
+@import url(../blocks/root/root.css);
+/* Bloks Header*/
+@import url(../blocks/page/page.css);
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__logo/logo.css);
+@import url(../blocks/header/__logo/_place_header/logo_place_header.css);
+@import url(../blocks/header/__tittle/header__title.css);
+@import url(../blocks/header/__subtittle/header__subtitle.css);
+@import url(../blocks/header/__link/header__link.css);
+@import url(../blocks/header/__illustration/header__main-illustration.css);
+@import url(../blocks/header/__square/header__square.css);
+/* Bloks Main */
+@import url(../blocks/main/description.css);
+@import url(../blocks/main/__columns/two-columns.css);
+@import url(../blocks/main/__columns/__brief/two-columns__brief.css);
+@import url(../blocks/main/__columns/__brief/two-columns__main-text.css);
+@import url(../blocks/main/__columns/__brief/__paragraph/two-columns__paragraph.css);
+@import url(../blocks/main/__columns/__brief/__paragraph/_span/two-columns__span-accent.css);
+/* Blacks Techniques */
+@import url(../blocks/techniques/techniques.css);
+@import url(../blocks/techniques/__cards/cards.css);
+/* Bloks Digits */
+@import url(../blocks/digits/digits.css);
+@import url(../blocks/digits/__title/section__title.css);
+@import url(../blocks/digits/__subtitle/section__subtitle.css);
+@import url(../blocks/digits/__table/table.css);
+@import url(../blocks/digits/__table/__cell/table__cell.css);
+@import url(../blocks/digits/__table/__cell/__heading/table__heading.css);
+@import url(../blocks/digits/__table/__cell/__text/table__text.css);
+/* Bloks Feynman */
+@import url(../blocks/feynman/feynman.css);
+@import url(../blocks/feynman/__title/feynman__title.css);
+@import url(../blocks/feynman/__subtitle/feynman__subtitle.css);
+@import url(../blocks/feynman/__link/feynman__link.css);
+@import url(../blocks/feynman/__image/feynman__image.css);
+/* Bloks Kaufman */
+@import url(../blocks/kaufman/kaufman.css);
+@import url(../blocks/kaufman/__title/_theme/title_theme-dark.css);
+@import url(../blocks/kaufman/__subtitle/_theme/subtitle_theme-dark.css);
+@import url(../blocks/kaufman/__table/_theme/table_theme-dark.css);
+@import url(../blocks/kaufman/__table/__cell/_theme/table__cell_teme-dark.css);
+@import url(../blocks/kaufman/__table/__cell/__heading/_theme/table__heading_theme-dark.css);
+@import url(../blocks/kaufman/__table/__cell/__text/_theme/table__text_theme-dark.css);
+@import url(../blocks/kaufman/__triangle/kaufman__triangle.css);
+/* Bloks Footer */
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__columns/footer__columns.css);
+@import url(../blocks/footer/__columns/__column/footer__column.css);
+@import url(../blocks/footer/__columns/__column/_content-copyright/column_content-copyright.css);
+@import url(../blocks/footer/__columns/__column/__content-copyright/__logo/_logo-place/footer__logo-place.css);
+@import url(../blocks/footer/__columns/__column/__content-copyright/__author/footer__author.css);
+@import url(../blocks/footer/__columns/__column/__content-about/column_content-about.css);
+@import url(../blocks/footer/__columns/__column/__content-about/__heading/footer__column-heading.css);
+@import url(../blocks/footer/__columns/__column/__content-about/__list/footer__list.css);
+@import url(../blocks/footer/__columns/__column/__content-about/__list/__link/footer__column-link.css);
+@import url(../blocks/footer/__columns/__column/__content-social/column_content-social.css);
+@import url(../blocks/footer/__columns/__column/__content-social/__social-icons/footer__social-icons.css);
+

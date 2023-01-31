@@ -1,25 +1,23 @@
-<!-- Hola Mundo :) Tercer intento, saludos desde este lado de la pantalla! que tenga un buen dia! -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet"  href="styles/normalize.css">
-  <link rel="stylesheet"  href="styles/style.css">
+  <link rel="stylesheet" href="./pages/index.css">
+  <link rel="stylesheet" href="./styles/style.css">
   <title>Aprender a aprender</title>
 </head>
                                                 <!-- BODY -->
-<body>
+<body class="root">
   <div class="page">
     <header class="header">
       <img class="logo logo_place_header" src="./images/logo_place_header.png" alt="logo header">
-      <!-- no se preocupe los errores los comete cualquiera! hasta los mas expertos se equivocan y siguen aprendiendo! =D -->
       <h1 class="header__title">Aprender a aprender</h1>
       <p class="header__subtitle">Las técnicas de aprendizaje más eficaces y avanzadas que puedes aplicar en tu vida diaria
-        <a class="header__link" href="#">Más información →</a>
+        <a class="header__link root__link_active" href="#">Más información →</a>
       </p>
       <img class="header__main-illustration" src="./images/header-image.png" alt="hombre dominando la montaña">
-      <div class="header__square"></div>
+      <div class="header__square rotation"></div>
       </header>
                                                   <!-- MAIN -->
     <main class="content">
@@ -45,7 +43,40 @@
           </div>
         </article>
       </section>
-                                          <!-- FIRST SECTION -->
+                                          <!-- Section techniques  -->
+      <section class="techniques red">
+        <h2 class="section__title ">Técnicas de aprendizaje</h2>
+        <h3 class="section__subtitle">Cinco estrategias por Barbara Oakley</h3>
+        <div class="cards">
+          <article class="cards__item blue">
+            <img class="card__imagen red" src="./images/cards-attention.png" alt="atencion plena">
+            <div class="cards__title red">Piensa de dos maneras distintas</div>
+            <div class="cards__description red">Un profundo conocimiento 
+              se puede lograr alternando libremente entre el pensamiento concentrado y el difuso.</div>
+          </article>
+          <article class="cards__item blue">
+            <img class="card__imagen" src="./images/cards-recall.png" alt="recuerda">
+            <div class="cards__title red">Usa el recuerdo</div>
+            <div class="cards__description red">Mejorar tu capacidad de recordar piezas clave de información ayuda a conectar diferentes áreas del cerebro.</div>
+          </article>
+          <article class="cards__item blue">
+            <img class="card__imagen" src="./images/cards-interleaving.png" alt="alterna">
+            <div class="cards__title red">Alterna</div>
+            <div class="cards__description red">Cuando aprendes múltiples habilidades al mismo tiempo, estas se refuerzan mutuamente.</div>
+          </article>
+          <article class="cards__item blue">
+            <img class="card__imagen" src="./images/cards-question.png" alt="preguntate">
+            <div class="cards__title red">Haz preguntas</div>
+            <div class="cards__description red">Cuando escuches a tu profesor, piensa en una buena pregunta, en algo que realmente te intrigue.</div>
+          </article>
+          <article class="cards__item blue">
+            <img class="card__imagen" src="./images/cards-competence.png" alt="competicion">
+            <div class="cards__title red">Crea la ilusión de competencia</div>
+            <div class="cards__description red">Ponte a prueba, apunta tu resultado, cuéntaselo a otras personas y repite el proceso con diferentes configuraciones. Solo entonces podrás estar seguro de haber comprendido algo.</div>
+          </article>
+        </div>
+      </section>
+                                          <!-- Section digits -->
       <section class="digits"> 
           <h2 class="section__title">Datos y figuras</h2>
           <h3 class="section__subtitle">El aprendizaje y el cerebro</h3> 
@@ -90,7 +121,7 @@
       <section class="feynman">
         <h2 class="feynman__title">La técnica Feynman</h2>
         <h3 class="feynman__subtitle">Aprender sin olvidar</h3>
-        <a class="feynman__link" href="#">Más →</a>
+        <a class="feynman__link root__link_active" href="#">Más →</a>
         <img class="feynman__image" src="./images/feynman.png" alt="el cabezon feynman"> 
       </section>
                                             <!-- THRE SECTION -->
@@ -152,16 +183,16 @@
         <div class="footer__column column_content-about">
           <h3 class="footer__column-heading">Acerca de Practicum de Yandex</h3>
           <ul class="footer__list">
-            <li><a class="footer__column-link" href="#">Página principal</a></li>
-            <li><a class="footer__column-link" href="#">Misión</a></li>
-            <li><a class="footer__column-link" href="#">Profesiones</a></li>
+            <li><a class="footer__column-link root__link_active" href="#">Página principal</a></li>
+            <li><a class="footer__column-link root__link_active" href="#">Misión</a></li>
+            <li><a class="footer__column-link root__link_active" href="#">Profesiones</a></li>
           </ul> 
         </div>
         <div class="footer__column column_content-social">   
           <h3 class="footer__column-heading">Redes sociales</h3>
           <ul class="footer__list">
-            <li><a class="footer__column-link" href="#"><img class="footer__social-icons" src="./images/facebook_white.svg" alt="facebook icon">Facebook</a></li>
-            <li><a class="footer__column-link" href="#"><img class="footer__social-icons" src="./images/instagram_white.svg" alt="instagram icon">Instagram</a></li>
+            <li><a class="footer__column-link root__link_active" href="#"><img class="footer__social-icons" src="./images/facebook_white.svg" alt="facebook icon">Facebook</a></li>
+            <li><a class="footer__column-link root__link_active" href="#"><img class="footer__social-icons" src="./images/instagram_white.svg" alt="instagram icon">Instagram</a></li>
           </ul>    
         </div>
       </div>
