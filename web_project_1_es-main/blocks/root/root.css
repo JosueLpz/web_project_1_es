@@ -1,21 +1,17 @@
-@keyframes link-opacity {
-  from{opacity: 1;}
-  to{opacity: 0.5;}
+@keyframes rotation{
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
 }
 
-@keyframes rotation {
-  from{transform: rotate(0deg);}
-  to{transform: rotate(360deg);}
-}
-
-.rotation{
-  animation: rotation 20seg linear infinite normal backwards running;
+.root__rotation{
+  animation: rotation 20s linear infinite;
 }
 
 .root__link_active{
-  
+  opacity: 1;
+  transition: opacity 1s linear;  
 }
 
 .root__link_active:hover{
-  animation: link-opacity 1s forwards;
+  opacity: 0.5; 
 }
