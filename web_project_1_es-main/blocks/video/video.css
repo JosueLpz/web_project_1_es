@@ -3,5 +3,6 @@
   flex-direction: column;
   align-items: center;
   margin: 100px 0 0 0;
-  background-image: linear-gradient(to top, #F2F2F2 160px, white 0px);
+  position: relative;
+  height: 430px;
 }
