@@ -26,7 +26,7 @@
 @import url(../blocks/techniques/__subtitle/techniques__subtitle.css);
 @import url(../blocks/techniques/__cards/cards.css);
 @import url(../blocks/techniques/__cards/__item/cards__item.css);
-@import url(../blocks/techniques/__cards/__item/__image/card__image.css);
+@import url(../blocks/techniques/__cards/__item/__image/cards__image.css);
 @import url(../blocks/techniques/__cards/__item/__title/cards__title.css);
 @import url(../blocks/techniques/__cards/__item/__description/cards__description.css);
 /* Bloks Video */
@@ -80,20 +80,20 @@
 @import url(../blocks/resourcers/subtitle/resourcers__subtitle.css);
 @import url(../blocks/resourcers/__logo-zone/resourcers__logo-zone.css);
 @import url(../blocks/resourcers/__logo-zone/__logo/resourcers__logo.css);
-@import url(../blocks/resourcers/__logo-zone/__logo/_active/logo_link_active.css);
+@import url(../blocks/resourcers/__logo-zone/__logo/_active/resourcers__logo_link_active.css);
 /* Bloks Footer */
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__columns/footer__columns.css);
 @import url(../blocks/footer/__columns/__column/footer__column.css);
-@import url(../blocks/footer/__columns/__column/_content-copyright/column_content-copyright.css);
+@import url(../blocks/footer/__columns/__column/__content-copyright/footer__column_content-copyright.css);
 @import url(../blocks/footer/__columns/__column/__content-copyright/__logo/_logo-place/footer__logo-place.css);
 @import url(../blocks/footer/__columns/__column/__content-copyright/__author/footer__author.css);
-@import url(../blocks/footer/__columns/__column/__content-about/column_content-about.css);
+@import url(../blocks/footer/__columns/__column/__content-about/footer__column_content-about.css);
 @import url(../blocks/footer/__columns/__column/__content-about/__heading/footer__column-heading.css);
 @import url(../blocks/footer/__columns/__column/__content-about/__list/footer__list.css);
 @import url(../blocks/footer/__columns/__column/__content-about/__list/__link/footer__column-link.css);
-@import url(../blocks/footer/__columns/__column/__content-about/__list/__link/_active/footer__link_active.css);
-@import url(../blocks/footer/__columns/__column/__content-social/column_content-social.css);
+@import url(../blocks/footer/__columns/__column/__content-about/__list/__link/_active/footer__column_link-active.css);
+@import url(../blocks/footer/__columns/__column/__content-social/footer__column_content-social.css);
 @import url(../blocks/footer/__columns/__column/__content-social/__social-icons/footer__social-icons.css);
 
 

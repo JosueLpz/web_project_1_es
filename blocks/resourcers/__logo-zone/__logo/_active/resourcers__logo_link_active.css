@@ -1,8 +1,8 @@
-.footer__link_active{
+.resourcers__logo_link_active{
   opacity: 1;
   transition: opacity 1s linear;  
 }
 
-.footer__link_active:hover{
+.resourcers__logo_link_active:hover{
   opacity: 0.5; 
 }
