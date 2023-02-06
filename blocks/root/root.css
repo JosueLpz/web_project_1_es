@@ -7,11 +7,3 @@
   animation: rotation 20s linear infinite;
 }
 
-.root__link_active{
-  opacity: 1;
-  transition: opacity 1s linear;  
-}
-
-.root__link_active:hover{
-  opacity: 0.5; 
-}
