@@ -1,0 +1,8 @@
+.khan__link-active{
+  opacity: 1;
+  transition: opacity 1s linear;  
+}
+
+.khan__link-active:hover{
+  opacity: 0.5; 
+}

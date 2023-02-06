@@ -1,3 +1,15 @@
+<!-- Hola Buenos dias! =) Espero se encuentre Bien!
+Paso a Explicar ciertas improvisaciones en el proyecto
+
+a)Cada Bloque tiene su titulo y subtitulo independiente para que cada bloque sea independiente de el resto como dicta BEM! 
+en la guia me piden re Utilizar __title __subtitle al principio lo realice de esta manera pero la prueba automatica me rechacaba esta alternativa!
+
+b) aplique una animacion global usando el root de mi etiqueta body!
+
+c) aplique la transition de los __links a cada bloque! en un principio estaba en root con el clase "root__link_active" pero 
+el auto corrector me lo rechazo!
+
+Que tenga usted un buen dia! salu2s-->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -14,7 +26,7 @@
       <img class="logo logo_place_header" src="./images/logo_place_header.png" alt="logo header">
       <h1 class="header__title">Aprender a aprender</h1>
       <p class="header__subtitle">Las técnicas de aprendizaje más eficaces y avanzadas que puedes aplicar en tu vida diaria
-        <a class="header__link link_active" href="#">Más información →</a>
+        <a class="header__link header__link-active" href="#">Más información →</a>
       </p>
       <img class="header__main-illustration" src="./images/header-image.png" alt="hombre dominando la montaña">
       <div class="header__square root__rotation"></div>
@@ -45,8 +57,8 @@
       </section>
                                           <!-- Bloks techniques  -->
       <section class="techniques">
-        <h2 class="section__title">Técnicas de aprendizaje</h2>
-        <h3 class="section__subtitle">Cinco estrategias por Barbara Oakley</h3>
+        <h2 class="techniques__section_title">Técnicas de aprendizaje</h2>
+        <h3 class="techniques__section_subtitle">Cinco estrategias por Barbara Oakley</h3>
         <div class="cards">
           <article class="cards__item">
             <img class="card__imagen" src="./images/cards-attention.png" alt="atencion plena">
@@ -78,11 +90,11 @@
       </section>
                                                       <!-- Bloks Video -->
       <section class="video">
-        <h2 class="section__title">Charlas TED</h2>
-        <h3 class="section__subtitle">Para los amantes de la procrastinación</h3>
+        <h2 class="video__section_title">Charlas TED</h2>
+        <h3 class="video__section_subtitle">Para los amantes de la procrastinación</h3>
         <div class="video__iframe">
-          <iframe width="560" height="315" style="margin-right: 20px;" src="https://www.youtube.com/embed/5MgBikgcWnY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/arj7oStGLkU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe width="515" height="316" src="https://www.youtube.com/embed/5MgBikgcWnY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" style="margin-right: 20px;" allowfullscreen></iframe>
+          <iframe width="515" height="316" src="https://www.youtube.com/embed/arj7oStGLkU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>   
       </section>
                                                   <!-- Bloks oakley -->
@@ -106,13 +118,13 @@
       <section class="feynman">
         <h2 class="feynman__title">La técnica Feynman</h2>
         <h3 class="feynman__subtitle">Aprender sin olvidar</h3>
-        <a class="feynman__link link_active" href="#">Más →</a>
+        <a class="feynman__link feynman__link-active" href="#">Más →</a>
         <img class="feynman__image" src="./images/feynman.png" alt="el cabezon feynman"> 
       </section>
                                           <!-- Section digits -->
         <section class="digits"> 
-        <h2 class="section__title">Datos y figuras</h2>
-        <h3 class="section__subtitle">El aprendizaje y el cerebro</h3> 
+        <h2 class="digits__section_title">Datos y figuras</h2>
+        <h3 class="digits__section_subtitle">El aprendizaje y el cerebro</h3> 
       <ol class="table">
         <li class="table__cell">
           <h3 class="table__heading">86 billones </h3>
@@ -160,14 +172,14 @@
         <h5 class="khan__quote-autor-subline">Director de cine</h5>
         <div class="khan__book-container">
           <img class="khan__book-pic" src="./images/khan-book-2.png" alt="libro khan">
-          <a class="khan__buy-link link_active" href="#">Comprar libro →</a>
+          <a class="khan__buy-link khan__link-active" href="#">Comprar libro →</a>
         </div>
       </article>
     </section>
                                                   <!-- Bloks kaufman -->
       <section class="kaufman">
-        <h2 class="section__title title_theme-dark">Diez principios para adquirir habilidades rápidamente</h2>
-        <h3 class="section__subtitle subtitle_theme-dark">por Josh Kaufman</h3>
+        <h2 class="kaufman__section_title title__theme-dark">Diez principios para adquirir habilidades rápidamente</h2>
+        <h3 class="kaufman__section_subtitle subtitle__theme-dark">por Josh Kaufman</h3>
         <ul class="table table_theme-dark">
           <li class="table__cell table__cell_teme-dark">
             <h3 class="table__heading table__heading_theme-dark">1</h3>
@@ -214,13 +226,13 @@
       </section>
                                                   <!-- Bloks resourcers -->
       <section class="resourcers">
-        <h2 class="section__title">Recursos útiles</h2>
-        <h3 class="section__subtitle">Más materiales sobre técnicas y trucos de aprendizaje</h3>
+        <h2 class="resourcers__section_title">Recursos útiles</h2>
+        <h3 class="resourcers__section_subtitle">Más materiales sobre técnicas y trucos de aprendizaje</h3>
         <ul class="resourcers__logo-zone">
-          <li><a href="#"><img class="resourcers__logo link_active" src="./images/logo/resources-tedED.png" alt="logo ted"></a></li>
-          <li><a href="#"><img class="resourcers__logo link_active" src="./images/logo/resources-Medium.png" alt="logo medium"></a></li>
-          <li><a href="#"><img class="resourcers__logo link_active" src="./images/logo/resources-dezeen.png" alt="logo dezeen"></a></li>
-          <li><a href="#"><img class="resourcers__logo link_active" src="./images/logo/resources-goodreads.png" alt="logo goodreasds"></a></li>
+          <li><a href="#"><img class="resourcers__logo logo__link_active" src="./images/logo/resources-tedED.png" alt="logo ted"></a></li>
+          <li><a href="#"><img class="resourcers__logo logo__link_active" src="./images/logo/resources-Medium.png" alt="logo medium"></a></li>
+          <li><a href="#"><img class="resourcers__logo logo__link_active" src="./images/logo/resources-dezeen.png" alt="logo dezeen"></a></li>
+          <li><a href="#"><img class="resourcers__logo logo__link_active" src="./images/logo/resources-goodreads.png" alt="logo goodreasds"></a></li>
         </ul>
       </section>
     </main>
@@ -234,16 +246,16 @@
         <div class="footer__column column_content-about">
           <h3 class="footer__column-heading">Acerca de Practicum de Yandex</h3>
           <ul class="footer__list">
-            <li><a class="footer__column-link link_active" href="#">Página principal</a></li>
-            <li><a class="footer__column-link link_active" href="#">Misión</a></li>
-            <li><a class="footer__column-link link_active" href="#">Profesiones</a></li>
+            <li><a class="footer__column-link footer__link_active" href="#">Página principal</a></li>
+            <li><a class="footer__column-link footer__link_active" href="#">Misión</a></li>
+            <li><a class="footer__column-link footer__link_active" href="#">Profesiones</a></li>
           </ul> 
         </div>
         <div class="footer__column column_content-social">   
           <h3 class="footer__column-heading">Redes sociales</h3>
           <ul class="footer__list">
-            <li><a class="footer__column-link link_active" href="#"><img class="footer__social-icons" src="./images/facebook_white.svg" alt="facebook icon">Facebook</a></li>
-            <li><a class="footer__column-link link_active" href="#"><img class="footer__social-icons" src="./images/instagram_white.svg" alt="instagram icon">Instagram</a></li>
+            <li><a class="footer__column-link footer__link_active" href="#"><img class="footer__social-icons" src="./images/facebook_white.svg" alt="facebook icon">Facebook</a></li>
+            <li><a class="footer__column-link footer__link_active" href="#"><img class="footer__social-icons" src="./images/instagram_white.svg" alt="instagram icon">Instagram</a></li>
           </ul>    
         </div>
       </div>

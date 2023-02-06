@@ -1,0 +1,8 @@
+.footer__link_active{
+  opacity: 1;
+  transition: opacity 1s linear;  
+}
+
+.footer__link_active:hover{
+  opacity: 0.5; 
+}
