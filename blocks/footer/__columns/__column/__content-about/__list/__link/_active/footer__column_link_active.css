@@ -1,8 +1,8 @@
-.footer__column_link-active{
+.footer__column_link_active{
   opacity: 1;
   transition: opacity 1s linear;  
 }
 
-.footer__column_link-active:hover{
+.footer__column_link_active:hover{
   opacity: 0.5; 
 }

@@ -92,7 +92,7 @@
 @import url(../blocks/footer/__columns/__column/__content-about/__heading/footer__column-heading.css);
 @import url(../blocks/footer/__columns/__column/__content-about/__list/footer__list.css);
 @import url(../blocks/footer/__columns/__column/__content-about/__list/__link/footer__column-link.css);
-@import url(../blocks/footer/__columns/__column/__content-about/__list/__link/_active/footer__column_link-active.css);
+@import url(../blocks/footer/__columns/__column/__content-about/__list/__link/_active/footer__column_link_active.css);
 @import url(../blocks/footer/__columns/__column/__content-social/footer__column_content-social.css);
 @import url(../blocks/footer/__columns/__column/__content-social/__social-icons/footer__social-icons.css);
 
