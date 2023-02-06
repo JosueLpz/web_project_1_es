@@ -66,9 +66,9 @@
 /* Bloks Kaufman */
 @import url(../blocks/kaufman/kaufman.css);
 @import url(../blocks/kaufman/__title/kaufman__title.css);
-@import url(../blocks/kaufman/__title/_theme/title_theme-dark.css);
+@import url(../blocks/kaufman/__title/_theme/kaufman__title_theme-dark.css);
 @import url(../blocks/kaufman/__subtitle/kaufman__subtitle.css);
-@import url(../blocks/kaufman/__subtitle/_theme/subtitle_theme-dark.css);
+@import url(../blocks/kaufman/__subtitle/_theme/kaufman__subtitle_theme_dark.css);
 @import url(../blocks/kaufman/__table/_theme/table_theme-dark.css);
 @import url(../blocks/kaufman/__table/__cell/_theme/table__cell_teme-dark.css);
 @import url(../blocks/kaufman/__table/__cell/__heading/_theme/table__heading_theme-dark.css);
